@@ -57,5 +57,37 @@ for(let a =3;a<100;a++){
     }
 }*/
 
+//? 28 
+/*
+let a =0;
+let deger = prompt("Değer Giriniz");
+for(let i =1;i<=deger;i++){
+    if(deger%i==0){
+        console.log(" "+i);
+        a+=i;
+    }
+
+}
+if(deger*2==a){
+    console.log("Mükemmel Sayı");
+}
+*/
+//? 10 luk dan 2 lik sayı sistemine çevirme
+let kalan;
+let a;
+let sayi= prompt("Çevirmek İstediğiniz Sayıyı Giriniz");
+function onlukdanikiliksayiyacevirme(){
+    do{
+        
+
+        sayi%2==kalan;
+        console.log(kalan);
+        sayi= sayi/2
+    }
+    while(kalan == 1 && kalan == 0){
+        
+    }
+
+}
 
 
