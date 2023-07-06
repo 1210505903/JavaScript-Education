@@ -76,13 +76,12 @@ if(deger*2==a){
 let kalan;
 let a;
 let sayi= prompt("Çevirmek İstediğiniz Sayıyı Giriniz");
-function onlukdanikiliksayiyacevirme(){
+onlukdanikiliksayiyacevirme(sayi)
+function onlukdanikiliksayiyacevirme(sayii){
     do{
-        
-
-        sayi%2==kalan;
+        sayii%2==kalan;
         console.log(kalan);
-        sayi= sayi/2
+        sayii= sayii/2
     }
     while(kalan == 1 && kalan == 0){
         
