@@ -73,6 +73,7 @@ if(deger*2==a){
 }
 */
 //? 10 luk dan 2 lik sayı sistemine çevirme
+/*
 let kalan;
 let a;
 let sayi= prompt("Çevirmek İstediğiniz Sayıyı Giriniz");
@@ -87,6 +88,9 @@ function onlukdanikiliksayiyacevirme(sayii){
         
     }
 
-}
+}*/
 
+
+value= document.domain;
+console.log(value); 
 
