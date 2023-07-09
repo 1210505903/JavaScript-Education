@@ -28,5 +28,18 @@ let value ;
 // value = document.contentType;
 //value = document.location.hostname();
 //value = document.location.port; 
-value= document.links.item(4);
-console.log(value);
+//value= document.links.item(4);
+
+
+//querySelector - querySelecterAll
+
+const todo = document.querySelector(".list-group")
+const cart = document.querySelector(".card");
+
+console.log(cart);
+
+
+console.log(todo);
+ 
+
+
