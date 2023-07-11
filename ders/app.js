@@ -33,13 +33,59 @@ let value ;
 
 //querySelector - querySelecterAll
 
-const todo = document.querySelector(".list-group")
+/*const todo = document.querySelector(".list-group")
 const cart = document.querySelector(".card");
 
 console.log(cart);
 
 
 console.log(todo);
- 
+ */
+
+const form = document.querySelector("#todoAddForm");
+const  addInput = document.querySelector("#todoName");
+const todoList = document.querySelector(".list-group");
+const firstCarBudy = document.querySelectorAll(".list-group")[0];
+const secondCarBudy = document.querySelectorAll(".list-group")[1];
+const clearbutton = document.querySelector("#clearbutton");
+
+run();
+
+function run(){
+
+    form.addEventListener("sumbit",addTodo);
+}
+
+function addTodo(e){
+    const inputText  = addInput.value.trim();
+    if(inputText == null && inputText == ""){
+        alert("LÜFTFEN GEÇERLİ Bİ DEĞER GİRİNİZ");
+    }else {
+            addTodoIU(inputText); // Ara yüze ekleme
+    }
+    //storge ekleme 
+    e.preventDefault();
+}
+
+function addTodoIU(newTodo){
+    //EKRANA YAZDIRMA
+    //İLK OLARAK EKRANA YAZDIRIYORZ
+    const li = document.createElement("li");
+    li.className= "list-group-item d-flex justify-content-between";
+    li.textContent =newTodo;
+
+    const a = document.createElement("a");
+    a.href="#";
+    a.className="delete-item";
+
+    const i = document.createElement("i");
+    i.className="fa fa-remove";
+
+    a.appendChild(i);
+    li.appendChild(a);
+    form.appendChild(li);
+
+    addInput="";
 
 
+}
