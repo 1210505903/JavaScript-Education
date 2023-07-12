@@ -2,7 +2,7 @@
 
 // console.log(window);
 
-let value ;
+//let value ;
 
 //console.log(document);
 
@@ -49,19 +49,21 @@ const firstCarBudy = document.querySelectorAll(".list-group")[0];
 const secondCarBudy = document.querySelectorAll(".list-group")[1];
 const clearbutton = document.querySelector("#clearbutton");
 
-run();
+runEvents();
 
-function run(){
-
-    form.addEventListener("sumbit",addTodo);
+function runEvents(){
+    
+    form.addEventListener("submit",addTodo);
 }
 
 function addTodo(e){
-    const inputText  = addInput.value.trim();
+  
+    const inputText  = addInput.value();
+    console.log(inputText);
     if(inputText == null && inputText == ""){
         alert("LÜFTFEN GEÇERLİ Bİ DEĞER GİRİNİZ");
     }else {
-            addTodoIU(inputText); // Ara yüze ekleme
+        addTodoIU(inputText); // Ara yüze ekleme
     }
     //storge ekleme 
     e.preventDefault();
@@ -83,9 +85,7 @@ function addTodoIU(newTodo){
 
     a.appendChild(i);
     li.appendChild(a);
-    form.appendChild(li);
+    todoList.appendChild(li);
 
-    addInput="";
-
-
-}
+    //addInput="";
+    }
