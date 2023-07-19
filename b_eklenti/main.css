@@ -1,0 +1,129 @@
+.container {
+    width: 97%;
+    height: 93%;
+}
+
+.btn {
+    background-color: #ea484d;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    
+}
+
+.modal_content {
+    background-color: #a0bc44;
+    width: 250px;
+    height: 350px;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    border-radius: 15px;
+    visibility: hidden;
+}
+
+.open-modal-content {
+    visibility: visible;
+
+}
+
+.modal_content .modal {
+    color: white;
+    position: relative;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.modal_bar {
+    background: #ea484d;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.modal_bar p {
+    color: black;
+}
+
+.modal_bar button {
+    margin-right: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.modal_description {
+    padding: 10px 15px;
+    font-size: 15px;
+
+}
+
+.modal_description .modal_links button {
+
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background-color: #ea484d;
+    border-radius: 20px;
+
+}
+
+.modal_description .modal_links button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.bubble {
+    position: relative;
+    background: #a0bc44;
+    border-radius: .4em;
+}
+
+.bubble {
+    width: 130px;
+    padding: 10px 20px;
+    margin: 1 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 250%;
+    text-shadow: 0 -0.05em 0.1em rgba(0, 0, 0, .3);
+    position: absolute;
+    left: 90%;
+    top: 86%;
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #a0bc44;
+    border-bottom: 0;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+.bubble h2 {
+    margin: 0;
+    font-size: 40%;
+    font-weight: normal;
+}
