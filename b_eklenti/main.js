@@ -5,6 +5,7 @@ function toggleModal() {
         modal_content.classList.add("open-modal-content")
         modal_content.classList.add("is_active")
         var secilenID = document.getElementById("bubble");
+        //modal_content.classList.add("bubbleclick")
         secilenID.style.display = "none";
     } else {
         closeModal();

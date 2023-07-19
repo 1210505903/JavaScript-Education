@@ -12,7 +12,7 @@
     position: fixed;
     bottom: 20px;
     right: 40px;
-    
+
 }
 
 .modal_content {
@@ -24,11 +24,11 @@
     right: 40px;
     border-radius: 15px;
     visibility: hidden;
+
 }
 
 .open-modal-content {
     visibility: visible;
-
 }
 
 .modal_content .modal {
@@ -51,7 +51,7 @@
 }
 
 .modal_bar button {
-    margin-right: 8px;
+    margin-left: -15px;
     cursor: pointer;
     border: none;
     outline: none;
@@ -60,11 +60,17 @@
     font-size: 20px;
     font-family: monospace;
 }
-
+.modal_description_ic{
+    width: 215px;
+    height: 114px;
+    padding-left: 7px;
+    border-radius: 5%;
+    background-color: #c1d67a;
+}
 .modal_description {
-    padding: 10px 15px;
+    padding: 5px 15px;
     font-size: 15px;
-
+    margin-top: -5px;
 }
 
 .modal_description .modal_links button {
@@ -92,9 +98,7 @@
     position: relative;
     background: #a0bc44;
     border-radius: .4em;
-}
-
-.bubble {
+    transition: visibility 5s;
     width: 130px;
     padding: 10px 20px;
     margin: 1 0;
@@ -106,6 +110,7 @@
     position: absolute;
     left: 90%;
     top: 86%;
+
 }
 
 .bubble:after {
@@ -126,4 +131,27 @@
     margin: 0;
     font-size: 40%;
     font-weight: normal;
+}
+
+.btn img {
+    transition: 1s ease;
+}
+
+.btn img:hover {
+    transform: scale(1.2);
+    filter: opacity(5px);
+}
+
+.modal_description_ic:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #a0bc44;
+    border-bottom: 0;
+    margin-left: 20px;
+    margin-bottom: -10px;
 }
