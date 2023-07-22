@@ -62,7 +62,7 @@
 }
 .modal_description_ic{
     width: 215px;
-    height: 114px;
+    height: 98px;
     padding-left: 7px;
     border-radius: 5%;
     background-color: #c1d67a;
@@ -146,12 +146,13 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
+    left: -20px;
+    width: -200px;
+    height: -220px;
     border: 15px solid transparent;
-    border-top-color: #a0bc44;
+    border-top-color: #c1d67a;
     border-bottom: 0;
     margin-left: 20px;
-    margin-bottom: -10px;
+    margin-bottom: 50px;
+    transform: rotate(90deg); 
 }
