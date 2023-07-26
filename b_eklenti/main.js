@@ -1,4 +1,11 @@
-
+function toggleeeee(){
+    const parg = document.getElementById("info");
+    if (parg.style.display === "none") {
+        parg.style.display = "block";
+    } else {
+        parg.style.display = "none";
+    }
+}
 function toggleModal() {
     const modal_content = document.getElementById("modal_content");
     if (!modal_content.classList.contains('is_active')) {
@@ -21,4 +28,6 @@ function closeModal() {
     modal_content.classList.remove("is_active");
     bubble.style.display = "";
 }
+
+
 

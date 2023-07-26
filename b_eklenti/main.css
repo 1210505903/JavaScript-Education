@@ -14,42 +14,61 @@
     right: 40px;
 
 }
+.baslik{
+    padding-left: 18px;
+    color: white;
+    font-size: 17px;
 
+}
 .modal_content {
-    background-color: #a0bc44;
-    width: 250px;
+    background-color: rgb(var(--surface-color));
+    width: 270px;
     height: 350px;
     position: fixed;
     bottom: 100px;
     right: 40px;
-    border-radius: 15px;
+    border-radius: 5px;
     visibility: hidden;
+    border-style: groove; 
+    border-color: #ea484d;
+    border-width: 1px;
+    overflow-x: hidden;
+    offset-block-start: auto;
+    overflow: auto;
+    scroll-snap-type: proximity;
 
 }
 
 .open-modal-content {
-    visibility: visible;
+    visibility: visible; 
 }
 
 .modal_content .modal {
-    color: white;
+    color: black;
     position: relative;
-    font-size: 15px;
-    font-family: monospace;
+    font-size: 17px;
+    font-family: sans-serif;
+    
 }
 
 .modal_bar {
     background: #ea484d;
     display: flex;
     justify-content: space-between;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 1px;
 }
 
 .modal_bar p {
     color: black;
 }
-
+::-webkit-scrollbar-thumb{
+    background: #ea484d;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background: #fff;
+}
 .modal_bar button {
     margin-left: -15px;
     cursor: pointer;
@@ -57,15 +76,18 @@
     outline: none;
     background: none;
     color: white;
-    font-size: 20px;
+    margin-right: 5px;
+    font-size: 22px;
     font-family: monospace;
 }
 .modal_description_ic{
-    width: 215px;
-    height: 98px;
-    padding-left: 7px;
-    border-radius: 5%;
-    background-color: #c1d67a;
+    width: 235px;
+    height: 100px;
+    
+    margin-top: -4px;
+    padding-left:   7px;
+    border-radius: 3%;
+    background-color: rgb(233, 223, 223);
 }
 .modal_description {
     padding: 5px 15px;
@@ -74,29 +96,30 @@
 }
 
 .modal_description .modal_links button {
-
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 35px;
+    width: 240px;
     padding: 3% 10px;
     border: none;
-    outline: none;
+    margin-top: -10px;
     font-size: 12px;
     background-color: #ea484d;
-    border-radius: 20px;
-
+    border-radius: 13px;
+    margin-left: -10px;
+    margin-top: 5px;
 }
-
+.modal_links button:hover{
+    cursor:pointer;
+}
 .modal_description .modal_links button a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
 
 .bubble {
-    position: relative;
-    background: #a0bc44;
+    position: fixed;
+    display: flex;
+    background: #ea484d;
     border-radius: .4em;
     transition: visibility 5s;
     width: 130px;
@@ -121,7 +144,7 @@
     width: 0;
     height: 0;
     border: 15px solid transparent;
-    border-top-color: #a0bc44;
+    border-top-color: #ea484d;
     border-bottom: 0;
     margin-left: 20px;
     margin-bottom: -10px;
@@ -150,7 +173,7 @@
     width: -200px;
     height: -220px;
     border: 15px solid transparent;
-    border-top-color: #c1d67a;
+    border-top-color:  rgb(233, 223, 223);;
     border-bottom: 0;
     margin-left: 20px;
     margin-bottom: 50px;
