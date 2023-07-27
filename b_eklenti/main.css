@@ -2,7 +2,6 @@
     width: 97%;
     height: 93%;
 }
-
 .btn {
     background-color: #ea484d;
     width: 60px;
@@ -202,3 +201,48 @@
     margin-bottom: -150px;
     transform: rotate(270deg); 
 }
+
+.accaordion{
+    max-width: 200px;
+    height: 300px;
+}
+.accaordion .concentBx{
+    position: relative;
+    margin: 5px 5px;
+}
+
+.accordion .concentBx .label{
+    position: relative;
+    padding: 5px ;
+    margin-top: 5px;
+    font-size: 15px;
+    background-color: #ea484d;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.accordion .concentBx .label::before{
+    content: "+";
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    padding-top: 17px;
+    color: #fff;
+}
+.accordion .concentBx .content {
+    position: relative;
+    background-color: rgb(233, 223, 223);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordion .concentBx.active .content{
+    height: 40px;
+    padding: 10px;
+}
+.accordion .concentBx.active .label::before{
+    content: "-";
+} 
+

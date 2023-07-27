@@ -29,5 +29,13 @@ function closeModal() {
     bubble.style.display = "";
 }
 
+const accordion = document.getElementsByClassName("concentBx");
+console.log(accordion.length);
+for(i =0;i< accordion.length;i++){
+    console.log(accordion[i]);
+    accordion[i].addEventListener('click',function(){
+        this.classList.toggle('active');
+    })
+}
 
 
