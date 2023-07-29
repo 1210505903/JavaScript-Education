@@ -1,7 +1,10 @@
+
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa*/
 .container {
     width: 97%;
     height: 93%;
 }
+
 .btn {
     background-color: #ea484d;
     width: 60px;
@@ -13,12 +16,14 @@
     right: 40px;
 
 }
-.baslik{
+
+.baslik {
     padding-left: 18px;
     color: white;
     font-size: 17px;
 
 }
+
 .modal_content {
     background-color: rgb(var(--surface-color));
     width: 270px;
@@ -28,7 +33,7 @@
     right: 40px;
     border-radius: 5px;
     visibility: hidden;
-    border-style: groove; 
+    border-style: groove;
     border-color: #ea484d;
     border-width: 1px;
     overflow-x: hidden;
@@ -39,7 +44,7 @@
 }
 
 .open-modal-content {
-    visibility: visible; 
+    visibility: visible;
 }
 
 .modal_content .modal {
@@ -47,7 +52,7 @@
     position: relative;
     font-size: 17px;
     font-family: sans-serif;
-    
+
 }
 
 .modal_bar {
@@ -63,13 +68,15 @@
 }
 
 /*HATA BURDA*/
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #ea484d;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 5px;
     background: #fff;
 }
+
 .modal_bar button {
     margin-left: -15px;
     cursor: pointer;
@@ -81,15 +88,17 @@
     font-size: 22px;
     font-family: monospace;
 }
-.modal_description_ic{
+
+.modal_description_ic {
     width: 235px;
     height: 90px;
-    
+
     margin-top: -4px;
-    padding-left:   7px;
+    padding-left: 7px;
     border-radius: 3%;
     background-color: rgb(233, 223, 223);
 }
+
 .modal_description {
     padding: 5px 15px;
     font-size: 15px;
@@ -108,18 +117,21 @@
     margin-left: -10px;
     margin-top: 5px;
 }
-.modal_links button:hover{
-    cursor:pointer;
+
+.modal_links button:hover {
+    cursor: pointer;
 }
+
 .modal_description .modal_links button a {
     color: #fff;
     text-decoration: none;
 }
-.modal_sohbet{
+
+.modal_sohbet {
     width: 235px;
     height: 110px;
     margin-top: -4px;
-    padding-left:   -7px;
+    padding-left: -7px;
     border-radius: 3%;
     margin-left: -5px;
     background-color: rgb(233, 223, 223);
@@ -127,7 +139,7 @@
 
 .bubble {
     position: relative;
-    
+
     background: #ea484d;
     border-radius: .4em;
     transition: visibility 5s;
@@ -181,12 +193,13 @@
     width: -200px;
     height: -220px;
     border: 15px solid transparent;
-    border-top-color:  rgb(233, 223, 223);
+    border-top-color: rgb(233, 223, 223);
     border-bottom: 0;
     margin-left: 20px;
     margin-bottom: 50px;
-    transform: rotate(90deg); 
+    transform: rotate(90deg);
 }
+
 .modal_sohbet:after {
     content: '';
     position: absolute;
@@ -195,54 +208,11 @@
     width: -300px;
     height: -320px;
     border: 15px solid transparent;
-    border-top-color:  rgb(233, 223, 223);
+    border-top-color: rgb(233, 223, 223);
     border-bottom: 0;
     margin-left: 258px;
     margin-bottom: -150px;
-    transform: rotate(270deg); 
+    transform: rotate(270deg);
 }
 
-.accaordion{
-    max-width: 200px;
-    height: 300px;
-}
-.accaordion .concentBx{
-    position: relative;
-    margin: 5px 5px;
-}
-
-.accordion .concentBx .label{
-    position: relative;
-    padding: 5px ;
-    margin-top: 5px;
-    font-size: 15px;
-    background-color: #ea484d;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-}
-.accordion .concentBx .label::before{
-    content: "+";
-    position: absolute;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 1.5em;
-    padding-top: 17px;
-    color: #fff;
-}
-.accordion .concentBx .content {
-    position: relative;
-    background-color: rgb(233, 223, 223);
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    overflow-y: auto;
-}
-.accordion .concentBx.active .content{
-    height: 40px;
-    padding: 10px;
-}
-.accordion .concentBx.active .label::before{
-    content: "-";
-} 
-
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/

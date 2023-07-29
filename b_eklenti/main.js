@@ -1,4 +1,5 @@
-function toggleeeee(){
+
+function toggleeeee() {
     const parg = document.getElementById("info");
     if (parg.style.display === "none") {
         parg.style.display = "block";
@@ -17,9 +18,7 @@ function toggleModal() {
     } else {
         closeModal();
     }
-    //
-    //modal_content.classList.find(x=> x == "open-modal-content" ) ? modal_content.classList.add("close-modal-content") :  
-}
+ }
 
 function closeModal() {
     const bubble = document.getElementById("bubble")
@@ -29,13 +28,5 @@ function closeModal() {
     bubble.style.display = "";
 }
 
-const accordion = document.getElementsByClassName("concentBx");
-console.log(accordion.length);
-for(i =0;i< accordion.length;i++){
-    console.log(accordion[i]);
-    accordion[i].addEventListener('click',function(){
-        this.classList.toggle('active');
-    })
-}
 
 
