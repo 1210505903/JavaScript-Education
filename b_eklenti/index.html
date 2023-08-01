@@ -27,26 +27,46 @@
                     <button class="close-btn" onclick="closeModal()">&times;</button>
                 </div>
                 <div class="modal_description">
-                    <div class="modal_description_ic">
+                    <div class="modal_description_ic" id="introduction">
                         <p style="font-weight: bold; padding-top:5px;">Merhaba! 😊 </p>
                         <p style="margin-top: -8px;">Merak ettiğiniz soruları yanıtlamak için buradayım. Size nasıl
                             yardımcı olabilirim?</p>
-                        <button style="margin-top: -2px;"><a target="_blank"
-                                href="https://talker.bukytalk.com/tr/sign-up">Kaydımı nereden
-                                gerçekleştirebilirim?</a></button><br>
-
-                        <button><a onclick="toggleeeee()">Seans kaydımı nasıl
-                                gerçekleştirebilirim?</a></button><br>
-                        <div style="display: none;" id="info" class="modal_sohbet">
-                            <p style="padding-left: 5px; padding-top: 5px; font-family: sans-serif; ">
-                                Profilinize giriş yaptıktan sonra takvim
-                                seçeneğinden
-                                müsait olduğunuz gün ve saat aralığını seçerek, sizler için filtrelenmiş
-                                seanslardan
-                                dilediğinizi seçip kayıt oluşturabilirsiniz.</p>
+                        <div class="modal_links">
+                            <div>
+                            <button id="btn1" onclick="toggleButtons()"><a>1. Soru</a></button><br>
+                            <div onclick="toggleDiv(1)">
+                                <button id="btn3"  class="hidden"><a>1.1 Soru</a></button><br>
+                            <div id="div1" class="hidden-div">
+                                <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur soluta
+                                    illo tempora porro neque voluptas laudantium velit quia illum, quis, minus nobis
+                                    quisquam eveniet ipsa nam fugiat dolorum in molestiae nihil nostrum numquam
+                                    blanditiis quae voluptatum provident..</p>
+                            </div>
+                            </div>
+                            <button id="btn4" onclick="toggleDiv(2)" class="hidden"><a>1.2 Soru</a></button><br>
+                            <div id="div2" class="hidden-div">
+                                <p id="info">2OOOOOOOOOO</p>
+                            </div>
                         </div>
 
 
+                            <!-- <button id="btn2" onclick="toggleButtonss()"><a>2. Soru</a></button><br>
+
+                            <button id="btn5" onclick="toggleDiv(3)" style="margin-top: -60px;" class="hidden"><a>2.1
+                                    Soru</a></button><br>
+                            <div id="div3" class="hidden-div">
+                                <p id="info">3OOOOOOOOOOO</p>
+                            </div>
+                            <button id="btn6" onclick="toggleDiv(4)" class="hidden"><a>2.2 Soru</a></button><br>
+                            <div id="div4" class="hidden-div">
+                                <p id="info">OOOOOOOOOOOO</p>
+                            </div> -->
+
+                            <!--  
+                            <p style="display: none;" id="info">Profilinize giriş yaptıktan sonra takvim seçeneğinden
+                                müsait olduğunuz gün ve saat aralığını seçerek, sizler için filtrelenmiş seanslardan
+                                dilediğinizi seçip kayıt oluşturabilirsiniz.</p>-->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,20 +75,3 @@
 </body>
 
 </html>
-
-
-
-
-<button style="margin-top: -2px;"><a target="_blank" href="https://talker.bukytalk.com/tr/sign-up">Kaydımı nereden
-        gerçekleştirebilirim?</a></button><br>
-
-<button><a onclick="toggleeeee()">Seans kaydımı nasıl
-        gerçekleştirebilirim?</a></button><br>
-<div style="display: none;" id="info" class="modal_sohbet">
-    <p style="padding-left: 5px; padding-top: 5px; font-family: sans-serif; ">
-        Profilinize giriş yaptıktan sonra takvim
-        seçeneğinden
-        müsait olduğunuz gün ve saat aralığını seçerek, sizler için filtrelenmiş
-        seanslardan
-        dilediğinizi seçip kayıt oluşturabilirsiniz.</p>
-</div>
