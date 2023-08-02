@@ -38,7 +38,7 @@
     border-width: 1px;
     overflow-x: hidden;
     offset-block-start: auto;
-    overflow: auto;
+    
     scroll-snap-type: proximity;
 
 }
@@ -73,7 +73,7 @@
     background: #fff;
 }
 .modal_bar button {
-    margin-left: -15px;
+    margin-left: -25px;
     cursor: pointer;
     border: none;
     outline: none;
@@ -81,7 +81,11 @@
     color: white;
     margin-right: 5px;
     font-size: 22px;
+
     font-family: monospace;
+}
+#btn2{
+    margin-top: -2rem;
 }
 .modal_description_ic{
     width: 235px;
@@ -123,8 +127,6 @@
 
 
 .bubble {
-    position: fixed;
-    display: flex;
     background: #ea484d;
     border-radius: .4em;
     transition: visibility 5s;
@@ -136,10 +138,9 @@
     font-weight: bold;
     font-size: 250%;
     text-shadow: 0 -0.05em 0.1em rgba(0, 0, 0, .3);
-    position: absolute;
-    left: 90%;
-    top: 86%;
-
+    position: fixed;
+    bottom: 97px;
+    right: 20px;
 }
 
 .bubble:after {
