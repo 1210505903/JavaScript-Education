@@ -1,6 +1,7 @@
+let isOpen = false;
 
 function toggleDiv(divNum) {
-    
+
     var div = document.getElementById("div" + divNum);
     var allDivs = document.querySelectorAll(".hidden-div");
 
@@ -39,10 +40,10 @@ function toggleButtons() {
         button5.classList.add("hidden");
         button6.classList.add("hidden");
         button2.classList.remove("hidden");
-        div1.style.display="none";
-        div2.style.display="none";
-        div3.style.display="none";
-        div4.style.display="none";
+        div1.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "none";
+        div4.style.display = "none";
     }
 }
 function toggleButtonss() {
@@ -70,10 +71,10 @@ function toggleButtonss() {
         button9.classList.add("hidden");
         button10.classList.add("hidden");
         button1.classList.remove("hidden");
-        div5.style.display="none";
-        div6.style.display="none";
-        div7.style.display="none";
-        div8.style.display="none";
+        div5.style.display = "none";
+        div6.style.display = "none";
+        div7.style.display = "none";
+        div8.style.display = "none";
     }
 }
 function toggleModal() {
@@ -87,6 +88,7 @@ function toggleModal() {
     } else {
         closeModal();
     }
+
 }
 
 function closeModal() {
@@ -96,6 +98,7 @@ function closeModal() {
     modal_content.classList.remove("is_active");
     bubble.style.display = "";
 }
+
 
 
 
