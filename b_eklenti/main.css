@@ -26,8 +26,6 @@
 }
 
 .modal_content {
-    transition: height 0.5s;
-    transition: widht 0.5s;
     background-color: rgb(var(--surface-color));
     width: 300px;
     height: 450px;
@@ -41,13 +39,16 @@
     border-width: 1px;
     overflow-x: hidden;
     offset-block-start: auto;
-
     scroll-snap-type: proximity;
-
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .open-modal-content {
     visibility: visible;
+    opacity: 1;
+  transform: translateY(0);
 }
 
 .modal_content .modal {
@@ -151,7 +152,8 @@
     position: fixed;
     bottom: 97px;
     right: 20px;
-    transition: height 0.5s;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .bubble:after {
