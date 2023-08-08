@@ -42,13 +42,13 @@
     scroll-snap-type: proximity;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: visibility 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
 
 .open-modal-content {
     visibility: visible;
     opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 .modal_content .modal {
@@ -136,7 +136,6 @@
     text-decoration: none;
 }
 
-
 .bubble {
     background: #ea484d;
     border-radius: .4em;
@@ -152,8 +151,6 @@
     position: fixed;
     bottom: 97px;
     right: 20px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
 }
 
 .bubble:after {
