@@ -151,6 +151,9 @@
     position: fixed;
     bottom: 97px;
     right: 20px;
+    border-style: solid ;
+    border-width: 0.5px;
+    border-color: rgb(82, 17, 17);
 }
 
 .bubble:after {
@@ -165,6 +168,9 @@
     border-bottom: 0;
     margin-left: 20px;
     margin-bottom: -10px;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: rgb(82, 17, 17);
 }
 
 .bubble h2 {
