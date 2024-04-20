@@ -1,0 +1,35 @@
+.resim1{
+    width: 850px;
+    height: 450px;
+}
+*{
+    background-color: gray;
+    color: #ebebeb;
+}
+#ders1{
+    width: 400px;
+    height: 150px;
+    border-radius: 2px;
+    
+}
+#ders2{
+    width: 400px;
+    height: 150px;
+    border-radius: 2px;
+    float: right;
+}
+#ders3{
+    width: 400px;
+    height: 150px;
+    border-radius: 2px;
+    
+}
+#ders4{
+    width: 400px;
+    height: 150px;
+    border-radius: 2px;
+    float: right;
+}
+h1{
+    text-align: center;
+}
